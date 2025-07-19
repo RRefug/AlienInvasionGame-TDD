@@ -1,1 +1,18 @@
-Alien Invasion is a python game, from the book Python Crash Course, designed to help its readers better understand how to program in python. The goal of this project wasn't to create the game from scratch, but to build upon someone else's code and improve it. I cloned the project folder from a repo from Brian Macgro's github
+
+  Alien Invasion is a 2D sprite game from the book Python Crash Course, designed to help its readers better understand how to program in python.
+With the goal of having the reader use all of the knowledge they learned from the first 10 chapters to good use. Even providing a solution too!
+
+  I read those same chapters a while ago, but never tried the projects in the second half of the book until now. As I am learning more and more about 
+projects and programming languages with the projects and internship I aquired, I have been exposed to new coding practices and techniques to make me 
+a better Software Engineer.
+  That being said, the challenge I set out for myself with this project, wasn't to create the game from scratch, but to write unit tests for the 
+code solution using Test Driven Development, Design Patterns, and the knowledge I possess with coding at the moment. 
+
+  Leaping right into someone else's code helps give me a good practice of what to expect in the workforce, but also build upon someone else's code and improve it. 
+Once I created enough ZOMBIE tests, I then began improving the code by adding new features since it is bug free! 
+(Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.) 
+
+These new features consist of more game mechanics(i.e.map traversal, more sprite animations, more game mechanics, and more features than the original solution.)
+Bugs 
+
+I cloned the project folder from a repo from Brian Macgro's GitHub
