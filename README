@@ -12,7 +12,16 @@ code solution using Test Driven Development, Design Patterns, and the knowledge 
 Once I created enough ZOMBIE tests, I then began improving the code by adding new features since it is bug free! 
 (Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.) 
 
-These new features consist of more game mechanics(i.e.map traversal, more sprite animations, more game mechanics, and more features than the original solution.)
-Bugs 
+These new features consist of more game mechanics such as map traversal, more sprite animations, more game mechanics, and more features than the original solution had!
 
-I cloned the project folder from a repo from Brian Macgro's GitHub
+
+Bug free code allows you to add features with ease, is what I've learned and of course, those features will be tested and created with Test Driven Development.  
+
+
+
+I cloned the project solution from Bryanmacgro's GitHub
+The copy of the solution comes from the GitHub Repository belonging to bryanmacgo (his GitHub link below!)
+GitHub Repo: https://github.com/bryanmacgo/Alien-Invasion
+
+At the end of the project, I hope to show the end result and how it differs from the original. :D
+
