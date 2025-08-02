@@ -24,25 +24,29 @@ Benefits of TDD include:
   Leaping right into someone else's code sounds good in my book because I practice what to expect in the workforce, but also build upon someone else's code and improve it. 
 Once I hit 100% test coverage, it doesn't end there. Bugs can still linger here and there even with a 100% test coverage alone. Which is why devs say, "Zarro Boogs"! Which is why I will be using ZOMBIE testing along with TDD to aid
 in my goal of finding as many as I can before calling this project complete.
-I hope to improve the code with 
-
-- TDD,
-- unit tests,
-- mocking,
-- Zombie Testing, 
-- design pattern(s),
-- and maybe optimize it as best as I can because I am still beginning my Software Engineer Career by adding new features since I am aiming for bug free code! 
-
-(Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.) 
 
 
-Of course, I would have to refactor the code a bit before starting with TDD. Then I will go right in and hopefully add a lot of new features and game mechanics such as:
+As I continue developing this project, my goals are to:
+- ✅ Introduce PyTest-based unit tests for reliable test coverage
+- 🔄 Refactor legacy code to improve clarity and maintainability
+- 🧪 Apply Test-Driven Development (TDD) principles to new features
+- 🧱 Explore mock testing and Zombie Testing techniques
+- 🧠 Implement relevant design patterns to enhance structure
+- ⚙️ Optimize performance and scalability where possible
+- 🧑‍💻 Add new features while aiming for bug-free, production-ready code—part of my journey as a growing Software Engineer!
+
+Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.
+Of course, I would have to refactor the code a bit before starting with TDD. 
+Bug free code allows you to add features with ease, is what I've learned and of course, those features will be tested and created with Test Driven Development. 
+Then I will go right in and hopefully add a lot of new features and game mechanics such as:
 - map traversal,
 - more sprite/game mechanic animations, and
 - more game modes.
 
-
-Bug free code allows you to add features with ease, is what I've learned and of course, those features will be tested and created with Test Driven Development.  
+## Tech Stack
+- Python
+- PyGame
+- PyTest
 
 
 The copy of the solution comes from the GitHub Repository belonging to bryanmacgo (his GitHub link below!)
