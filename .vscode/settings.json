@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Alien-Invasion" //allows us to grab modules(files, ex: alien.py) from source folder
+    ]
+}
