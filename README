@@ -1,28 +1,43 @@
+ 
+Refactoring a legacy 2D Alien Invasion game with unit tests and Test-Driven Development (TDD). 
+TDD is a feedback-driven approach that emphasizes writing tests before writing code, leading to better code quality, faster development cycles, and reduced risk of bugs!!!
 
 
-  Alien Invasion is a 2D sprite game from the book Python Crash Course, designed to help its readers better understand how to program in python.
-With the goal of having the reader use all of the knowledge they learned from the first 10 chapters to good use. Even providing a solution too!
+  Alien Invasion is a 2D sprite game project from the 2nd half of the book called 'Python Crash Course', designed to aid its readers better understand how to program in python while providing a variety of projects to get started with.
+With the goal of having its readers use all of the knowledge they learned from the first 10 chapters, they even provide a solution too!
 
-  I read those same chapters a while ago, but never tried the projects in the second half of the book until now. As I am learning more and more about 
-projects and programming languages with the projects and internship I aquired, I have been exposed to new coding practices and techniques to make me 
-a better Software Engineer.
-  That being said, the challenge I set out for myself with this project, wasn't to create the game from scratch, but to write unit tests for the 
-code solution using Test Driven Development, Design Patterns, and the knowledge I possess with coding at the moment. 
+  I read those same chapters, but as I was about to start the AlienIvasion project, I thought I would take it up a notch and try it with Test Driven Development!
+I have experience with coding projects and programming languages due to university projects and an internship I recently aquired, so I have already been exposed to a few coding practices and techniques to make me a better Software Engineer.
+That being said, the challenge I set out for myself with this project, wasn't to create the game from scratch, but to look at someone else's solution and introduce Test-Driven Development into it. 
+(TDD overview: https://www.browserstack.com/guide/what-is-test-driven-development)
 
-  Leaping right into someone else's code helps give me a good practice of what to expect in the workforce, but also build upon someone else's code and improve it. 
-Once I created enough ZOMBIE tests, I then began improving the code by adding new features since it is bug free! 
+Benefits of TDD include:
+- Early bug detection,
+- Improved code quality,
+- Reduced rework,
+- Better design,
+- Faster development, and
+- living documentation
+
+
+  Leaping right into someone else's code sounds good in my book because I practice what to expect in the workforce, but also build upon someone else's code and improve it. 
+Once I hit 100% test coverage, it doesn't end there. TDD is even better with ZOMBIE TESTING. Bugs can still linger here and there and you shouldn't 100% rely on seeing a 100% test coverage. 
+I hope to improve the code by adding new features since I am aiming for bug free code! 
 (Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.) 
 
-These new features consist of more game mechanics such as map traversal, more sprite animations, more game mechanics, and more features than the original solution had!
+
+Of course, I would have to refactor the code a bit before starting with TDD. Then I will go right in and hopefully add a lot of new features and game mechanics such as:
+- map traversal,
+- more sprite/game mechanic animations, and
+- more game modes.
 
 
 Bug free code allows you to add features with ease, is what I've learned and of course, those features will be tested and created with Test Driven Development.  
 
 
-
-I cloned the project solution from Bryanmacgro's GitHub
 The copy of the solution comes from the GitHub Repository belonging to bryanmacgo (his GitHub link below!)
 GitHub Repo: https://github.com/bryanmacgo/Alien-Invasion
+I cloned the project solution from Bryanmacgro's GitHub. Feel free to check it out!
 
 At the end of the project, I hope to show the end result and how it differs from the original. :D
 
