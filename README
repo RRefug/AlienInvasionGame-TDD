@@ -1,5 +1,5 @@
  
-Refactoring a legacy 2D Alien Invasion game with unit tests and Test-Driven Development (TDD). 
+Refactoring a legacy 2D Alien Invasion game with unit/ZOMBIE tests and Test-Driven Development (TDD). 
 TDD is a feedback-driven approach that emphasizes writing tests before writing code, leading to better code quality, faster development cycles, and reduced risk of bugs!!!
 
 
@@ -8,8 +8,9 @@ With the goal of having its readers use all of the knowledge they learned from t
 
   I read those same chapters, but as I was about to start the AlienIvasion project, I thought I would take it up a notch and try it with Test Driven Development!
 I have experience with coding projects and programming languages due to university projects and an internship I recently aquired, so I have already been exposed to a few coding practices and techniques to make me a better Software Engineer.
-That being said, the challenge I set out for myself with this project, wasn't to create the game from scratch, but to look at someone else's solution and introduce Test-Driven Development into it. 
+That being said, the challenge I set out for myself with this project, wasn't to create the game from scratch, but to look at someone else's solution and introduce Test-Driven Development into it, accompanied by ZOMBIE Testing as well! 
 (TDD overview: https://www.browserstack.com/guide/what-is-test-driven-development)
+(ZOMBIE testing overview: https://hackernoon.com/zombie-testing-one-behavior-at-a-time-9s2m3zjo)
 
 Benefits of TDD include:
 - Early bug detection,
