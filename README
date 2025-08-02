@@ -1,5 +1,5 @@
- ![image alt](https://github.com/RRefug/AlienInvasionGame-TDD/blob/9ece7bdb85eaf0d51d1a3e063d0836b0ad1efb66/tdd.gif)
 
+[](https://github.com/RRefug/AlienInvasionGame-TDD/blob/9ece7bdb85eaf0d51d1a3e063d0836b0ad1efb66/tdd.gif)
 
 Refactoring a legacy 2D Alien Invasion game with unit/ZOMBIE tests and Test-Driven Development (TDD). 
 TDD is a feedback-driven approach that emphasizes writing tests before writing code, leading to better code quality, faster development cycles, and reduced risk of bugs!!!
