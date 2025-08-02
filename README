@@ -22,8 +22,17 @@ Benefits of TDD include:
 
 
   Leaping right into someone else's code sounds good in my book because I practice what to expect in the workforce, but also build upon someone else's code and improve it. 
-Once I hit 100% test coverage, it doesn't end there. TDD is even better with ZOMBIE TESTING. Bugs can still linger here and there and you shouldn't 100% rely on seeing a 100% test coverage. 
-I hope to improve the code by adding new features since I am aiming for bug free code! 
+Once I hit 100% test coverage, it doesn't end there. Bugs can still linger here and there even with a 100% test coverage alone. Which is why devs say, "Zarro Boogs"! Which is why I will be using ZOMBIE testing along with TDD to aid
+in my goal of finding as many as I can before calling this project complete.
+I hope to improve the code with 
+
+- TDD,
+- unit tests,
+- mocking,
+- Zombie Testing, 
+- design pattern(s),
+- and maybe optimize it as best as I can because I am still beginning my Software Engineer Career by adding new features since I am aiming for bug free code! 
+
 (Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.) 
 
 
