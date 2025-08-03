@@ -12,9 +12,9 @@ import pytest
 @pytest.fixture
 def game_screen_display():
     pygame.init() # making sure Pygame is initialized safely
-    game_screen_width = 200
-    game_screen_height = 200
-    game_screen_size = (game_screen_width, game_screen_height)
+    screen_width = 200
+    screen_height = 200
+    game_screen_size = (screen_width, screen_height)
     game_screen = pygame.display.set_mode(game_screen_size)
     yield game_screen   # returns screen
     pygame.quit()   # closes screen too
