@@ -1,3 +1,4 @@
+from dynamic_settings import Dynamic_Settings
 
 class Settings:
     """A class to store all settings for Alien Invasion. Game settings is a better name."""
@@ -15,24 +16,32 @@ class Settings:
         # How quickly the alien point values increase.
         self.score_scale = 1.5
 
-        self.initialize_dynamic_settings()
+        # composite design pattern
+        self.settings_dynamic = Dynamic_Settings()
 
-    def initialize_dynamic_settings(self):
-        """Initialize settings that change throughout the game."""
-        self.ship_speed_factor = 1.5
-        self.bullet_speed_factor = 3
-        self.alien_speed_factor = 0.3
 
-        # Scoring.
-        self.alien_points = 50
-
-        # fleet_direction of 1 represents right, -1 represents left.
-        self.fleet_direction = 1
-
-    def increase_speed(self):
+    def increase_speed_settings(self):
         """Increase speed settings and alien point values."""
-        self.ship_speed_factor *= self.speedup_scale
-        self.bullet_speed_factor *= self.speedup_scale
-        self.alien_speed_factor *= self.speedup_scale
+        
+        new_round_ship_speed = self.settings_dynamic.get_speed_factor_ship()
+        new_round_bullet_speed = self.settings_dynamic.get_speed_factor_bullet()
+        new_round_alien_speed = self.settings_dynamic.get_speed_factor_alien()
 
-        self.alien_points = int(self.alien_points * self.score_scale)
+        new_round_ship_speed *= self.speedup_scale
+        new_round_bullet_speed *= self.speedup_scale
+        new_round_alien_speed *= self.speedup_scale
+
+        self.settings_dynamic.set_speed_factor_ship(new_round_ship_speed)
+        self.settings_dynamic.set_speed_factor_bullet(new_round_bullet_speed)
+        self.settings_dynamic.set_speed_factor_alien(new_round_alien_speed)
+
+        self.increase_alien_point_value()
+
+
+    def increase_alien_point_value(self):
+        '''This function increments the score after defeating one alien. '''
+
+        set_new_round_alien_points = self.settings_dynamic.get_alien_points()
+        self.settings_dynamic.set_alien_points(int(set_new_round_alien_points * self.score_scale))
+
+

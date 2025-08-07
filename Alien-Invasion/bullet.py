@@ -21,7 +21,7 @@ class Bullet(Sprite):
         self.y = float(self.rect.y)
 
         self.color = ai_settings.settings_bullet.get_bullet_color()
-        self.speed_factor = ai_settings.bullet_speed_factor
+        self.speed_factor = ai_settings.settings_dynamic.get_speed_factor_bullet()
 
     def update(self):
         """Move the bullet up the screen."""

@@ -6,6 +6,7 @@ from screen_settings import Screen_Settings
 from ship_settings import Ship_Settings
 from bullet_settings import Bullet_Settings
 from alien_settings import Alien_Settings
+from dynamic_settings import Dynamic_Settings
 
 from game_stats import GameStats
 from scoreboard import Scoreboard
@@ -19,6 +20,7 @@ def run_game():
     # Initialize pygame, settings, and screen object.
     pygame.init()
 
+    # Aggregation design pattern
     screen_settings = Screen_Settings()
     ship_settings = Ship_Settings()
     bullet_settings = Bullet_Settings()
@@ -27,10 +29,13 @@ def run_game():
     
 
     print('This is the screen width from Screen_Settings class: ', alien_invasion_settings.settings_screen.get_screen_width())
+
+    screen_width = alien_invasion_settings.settings_screen.get_screen_width()
+    screen_height = alien_invasion_settings.settings_screen.get_screen_height()
+
     print('This is the screen height from Screen_Settings class: ', alien_invasion_settings.settings_screen.get_screen_height())
     screen = pygame.display.set_mode(
-        # (alien_invasion_settings.screen_width, alien_invasion_settings.screen_height)
-        (alien_invasion_settings.settings_screen.get_screen_width(), alien_invasion_settings.settings_screen.get_screen_height())
+        (screen_width, screen_height)
     )
     pygame.display.set_caption("Alien Invasion")
 

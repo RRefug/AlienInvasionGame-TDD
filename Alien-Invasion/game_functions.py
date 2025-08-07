@@ -59,7 +59,8 @@ def check_play_button(
     button_clicked = play_button.rect.collidepoint(mouse_x, mouse_y)
     if button_clicked and not stats.game_active:
         # Reset the game settings.
-        ai_settings.initialize_dynamic_settings()
+        #ai_settings.initialize_dynamic_settings()
+        ai_settings
 
         # Hide the mouse cursor.
         pygame.mouse.set_visible(False)
@@ -141,15 +142,16 @@ def check_bullet_alien_collisions(
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
 
     if collisions:
+        points_for_shooting_alien = ai_settings.settings_dynamic.get_alien_points()
         for aliens in collisions.values():
-            stats.score += ai_settings.alien_points * len(aliens)
+            stats.score += points_for_shooting_alien * len(aliens)
             sb.prep_score()
         check_high_score(stats, sb)
 
     if len(aliens) == 0:
         # If the entire fleet is destroyed, start a new level.
         bullets.empty()
-        ai_settings.increase_speed()
+        ai_settings.increase_speed_settings()
 
         # Increase level.
         stats.level += 1
@@ -168,10 +170,15 @@ def check_fleet_edges(ai_settings, aliens):
 
 def change_fleet_direction(ai_settings, aliens):
     """Drop the entire fleet, and change the fleet's direction."""
-    for alien in aliens.sprites():
-        alien.rect.y += ai_settings.settings_alien.get_fleet_drop_speed()
-    ai_settings.fleet_direction *= -1
+    fleet_direction = ai_settings.settings_dynamic.get_fleet_direction() 
+    drop_speed = ai_settings.settings_alien.get_fleet_drop_speed()
+    shift_to_the_left = -1
 
+    for alien in aliens.sprites():
+        alien.rect.y += drop_speed
+    
+    fleet_direction *= shift_to_the_left
+    ai_settings.settings_dynamic.set_fleet_direction(fleet_direction)
 
 def ship_hit(ai_settings, screen, stats, sb, ship, aliens, bullets):
     """Respond to ship being hit by alien."""
