@@ -16,7 +16,8 @@ class Settings:
         # How quickly the alien point values increase.
         self.score_scale = 1.5
 
-        # composite design pattern
+        # Composite association - the contained object cannot exist without the containing object.
+        # Ex: if settings is destroyed, dynamic settings can't exist without it.
         self.settings_dynamic = Dynamic_Settings()
 
 

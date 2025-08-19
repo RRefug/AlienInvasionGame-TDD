@@ -1,5 +1,3 @@
-
-
 class Dynamic_Settings:
     def __init__(self):
         """Initialize settings that change throughout the game."""

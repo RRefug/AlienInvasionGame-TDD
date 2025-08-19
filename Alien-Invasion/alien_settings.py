@@ -1,5 +1,3 @@
-
-
 class Alien_Settings:
     '''This class initializes the static alien settings.'''
     def __init__(self):

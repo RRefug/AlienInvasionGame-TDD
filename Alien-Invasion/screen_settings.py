@@ -1,5 +1,3 @@
-
-
 class Screen_Settings:
     '''This class initializes the static screen settings.'''
     def __init__(self):

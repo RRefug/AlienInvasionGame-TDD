@@ -1,4 +1,3 @@
-
 class Ship_Settings:
     '''This class initializes the static ship settings. '''
     def __init__(self):

@@ -6,34 +6,34 @@ from screen_settings import Screen_Settings
 from ship_settings import Ship_Settings
 from bullet_settings import Bullet_Settings
 from alien_settings import Alien_Settings
-from dynamic_settings import Dynamic_Settings
+
 
 from game_stats import GameStats
 from scoreboard import Scoreboard
 from button import Button
 from ship import Ship
-import game_functions as gf
 
+import game_functions as gf  # creating a class object when no class exists within game_functions file.
 
 
 def run_game():
     # Initialize pygame, settings, and screen object.
     pygame.init()
 
-    # Aggregation design pattern
+    
     screen_settings = Screen_Settings()
     ship_settings = Ship_Settings()
     bullet_settings = Bullet_Settings()
     alien_settings = Alien_Settings()
+
+    # Aggregation relationship - one class contains objects of another class. 
+    # Settings doesn't own the lifecycle of other sub objects.
     alien_invasion_settings = Settings(screen_settings, ship_settings, bullet_settings, alien_settings)
     
 
-    print('This is the screen width from Screen_Settings class: ', alien_invasion_settings.settings_screen.get_screen_width())
-
     screen_width = alien_invasion_settings.settings_screen.get_screen_width()
     screen_height = alien_invasion_settings.settings_screen.get_screen_height()
-
-    print('This is the screen height from Screen_Settings class: ', alien_invasion_settings.settings_screen.get_screen_height())
+    
     screen = pygame.display.set_mode(
         (screen_width, screen_height)
     )

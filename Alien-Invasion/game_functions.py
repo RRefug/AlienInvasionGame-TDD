@@ -267,3 +267,7 @@ def create_fleet(ai_settings, screen, ship, aliens):
         for alien_number in range(number_aliens_x):
             create_alien(ai_settings, screen, aliens, alien_number, row_number)
 
+
+
+# TODO: Maybe create a function that kills game when the game gets very quick
+# (ex: Lv. 100, makes everything so fast, computer turns very hot)

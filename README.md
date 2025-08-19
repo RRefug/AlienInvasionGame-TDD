@@ -40,10 +40,16 @@ As I continue developing this project, my goals are to:
 Fully testing a program allows a user to run into less bugs meaning there will be less unpredicatable behavior when a user interacts with it.
 Of course, I would have to refactor the code a bit before starting with TDD. 
 Bug free code allows you to add features with ease, is what I've learned and of course, those features will be tested and created with Test Driven Development. 
-Then I will go right in and hopefully add a lot of new features and game mechanics such as:
-- map traversal,
-- more sprite/game mechanic animations, and
-- more game modes.
+
+I don't want to change the original game premise. 
+I will go right in and hopefully add a lot of new features and game mechanics that fit right into the original game design instead
+
+such as:
+- bosses
+- different aliens
+- powerups
+- a leaderboard page with real time updates
+- a new game mode.
 
 ## Tech Stack
 - Python
