@@ -4,6 +4,7 @@
 Refactoring a legacy 2D Alien Invasion game with unit/ZOMBIE tests and Test-Driven Development (TDD). 
 TDD is a feedback-driven approach that emphasizes writing tests before writing code, leading to better code quality, faster development cycles, and reduced risk of bugs!!!
 
+## Introduction
 
   Alien Invasion is a 2D sprite game project from the 2nd half of the book called 'Python Crash Course', designed to aid its readers better understand how to program in python while providing a variety of projects to get started with.
 With the goal of having its readers use all of the knowledge they learned from the first 10 chapters, they even provide a solution too!
@@ -23,9 +24,9 @@ Benefits of TDD include:
 - living documentation
 
 
+## Purpose
   Leaping right into someone else's code sounds good in my book because I practice what to expect in the workforce, but also build upon someone else's code and improve it. 
-Once I hit 100% test coverage, it doesn't end there. Bugs can still linger here and there even with a 100% test coverage alone. Which is why devs say, "Zarro Boogs"! Which is why I will be using ZOMBIE testing along with TDD to aid
-in my goal of finding as many as I can before calling this project complete.
+Once I hit 100% test coverage, it doesn't end there. Bugs can still linger here and there even with a 100% test coverage alone. Which is why devs say, "Zarro Boogs"! Which is why I will be using ZOMBIE testing along with TDD to aid in my goal of finding as many as I can before calling this project complete.
 
 
 As I continue developing this project, my goals are to:
@@ -41,8 +42,9 @@ Fully testing a program allows a user to run into less bugs meaning there will b
 Of course, I would have to refactor the code a bit before starting with TDD. 
 Bug free code allows you to add features with ease, is what I've learned and of course, those features will be tested and created with Test Driven Development. 
 
+## New Game Features Wishlist
 I don't want to change the original game premise. 
-I will go right in and hopefully add a lot of new features and game mechanics that fit right into the original game design instead
+I will go right in and hopefully add a lot of new features and game mechanics that fit right into the original game design instead, while helping me learn new things
 
 such as:
 - bosses
