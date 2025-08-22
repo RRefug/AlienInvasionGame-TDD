@@ -1,4 +1,4 @@
-class Dynamic_Settings:
+class DynamicSettings:
     def __init__(self):
         """Initialize settings that change throughout the game."""
         self.speed_factor_ship = 1.5

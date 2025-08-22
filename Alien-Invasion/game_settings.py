@@ -1,7 +1,7 @@
-from dynamic_settings import Dynamic_Settings
+from dynamic_settings import DynamicSettings
 
-class Settings:
-    """A class to store all settings for Alien Invasion. Game settings is a better name."""
+class GameSettings:
+    """A class to store all settings for Alien Invasion."""
 
     def __init__(self, screen_settings_object, ship_settings_object, bullet_settings_object, alien_settings_object):
         """Initialize the game's static settings."""
@@ -18,7 +18,7 @@ class Settings:
 
         # Composite association - the contained object cannot exist without the containing object.
         # Ex: if settings is destroyed, dynamic settings can't exist without it.
-        self.settings_dynamic = Dynamic_Settings()
+        self.settings_dynamic = DynamicSettings()
 
 
     def increase_speed_settings(self):

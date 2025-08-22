@@ -1,4 +1,4 @@
-class Bullet_Settings:
+class BulletSettings:
     '''This class initializes the static bullet settings. '''
     def __init__(self):
         self.bullet_width = 3   

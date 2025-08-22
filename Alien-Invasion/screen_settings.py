@@ -1,4 +1,4 @@
-class Screen_Settings:
+class ScreenSettings:
     '''This class initializes the static screen settings.'''
     def __init__(self):
         self.screen_width = 1200

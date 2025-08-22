@@ -1,4 +1,4 @@
-class Ship_Settings:
+class ShipSettings:
     '''This class initializes the static ship settings. '''
     def __init__(self):
         self.ship_lives_limit = 3

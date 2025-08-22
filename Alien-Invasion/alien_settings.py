@@ -1,4 +1,4 @@
-class Alien_Settings:
+class AlienSettings:
     '''This class initializes the static alien settings.'''
     def __init__(self):
         self.fleet_drop_speed = 10

@@ -1,5 +1,5 @@
 from alien import Alien           # importing the file for alien
-from settings import Settings     # importing the file for settings
+from game_settings import GameSettings     # importing the file for settings
 import pygame       # importing the package
 import pytest
 
@@ -21,7 +21,7 @@ def game_screen_display():
 
 @pytest.fixture
 def all_Settings_For_Alien_Invasion():
-    all_alien_invasion_settings = Settings()
+    all_alien_invasion_settings = GameSettings()
     
     move_right = 1
     move_left = -1

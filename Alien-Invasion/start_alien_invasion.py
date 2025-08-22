@@ -1,12 +1,11 @@
 import pygame
 from pygame.sprite import Group
 
-from settings import Settings
-from screen_settings import Screen_Settings
-from ship_settings import Ship_Settings
-from bullet_settings import Bullet_Settings
-from alien_settings import Alien_Settings
-
+from game_settings import GameSettings
+from screen_settings import ScreenSettings
+from ship_settings import ShipSettings
+from bullet_settings import BulletSettings
+from alien_settings import AlienSettings
 
 from game_stats import GameStats
 from scoreboard import Scoreboard
@@ -20,15 +19,14 @@ def run_game():
     # Initialize pygame, settings, and screen object.
     pygame.init()
 
-    
-    screen_settings = Screen_Settings()
-    ship_settings = Ship_Settings()
-    bullet_settings = Bullet_Settings()
-    alien_settings = Alien_Settings()
+    screen_settings = ScreenSettings()
+    ship_settings = ShipSettings()
+    bullet_settings = BulletSettings()
+    alien_settings = AlienSettings()
 
     # Aggregation relationship - one class contains objects of another class. 
     # Settings doesn't own the lifecycle of other sub objects.
-    alien_invasion_settings = Settings(screen_settings, ship_settings, bullet_settings, alien_settings)
+    alien_invasion_settings = GameSettings(screen_settings, ship_settings, bullet_settings, alien_settings)
     
 
     screen_width = alien_invasion_settings.settings_screen.get_screen_width()

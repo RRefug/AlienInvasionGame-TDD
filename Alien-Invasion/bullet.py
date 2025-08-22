@@ -10,9 +10,12 @@ class Bullet(Sprite):
         super(Bullet, self).__init__()
         self.screen = screen
 
+        bullet_width = ai_settings.settings_bullet.get_bullet_width()
+        bullet_height = ai_settings.settings_bullet.get_bullet_height()
+
         # Create bullet rect at (0, 0), then set correct position.
         self.rect = pygame.Rect(
-            0, 0, ai_settings.settings_bullet.get_bullet_width(), ai_settings.settings_bullet.get_bullet_height()
+            0, 0, bullet_width, bullet_height
         )
         self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
