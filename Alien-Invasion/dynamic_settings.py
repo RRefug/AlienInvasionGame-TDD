@@ -5,12 +5,11 @@ class DynamicSettings:
         self.speed_factor_bullet = 3
         self.speed_factor_alien = 0.3
 
-        # TODO: rename bottom variables to something more meaningful!!!
         # Scoring.
-        self.alien_points = 50
+        self.points_per_alien = 50
 
         # fleet_direction of 1 represents right, -1 represents left.
-        self.fleet_direction = 1
+        self.fleet_direction_right = 1
 
     
     def get_speed_factor_ship(self):
