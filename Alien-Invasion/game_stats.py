@@ -19,3 +19,6 @@ class GameStats:
         print('this is the current allowed number of ships: ', self.ships_left)
         self.score = 0
         self.level = 1
+
+
+# TODO: Possibly add a live leaderboard page. Maybe not in here, but definitely happen.

@@ -34,17 +34,17 @@ class DynamicSettings:
 
     
     def get_alien_points(self):
-        return self.alien_points
+        return self.points_per_alien
     
     def set_alien_points(self, current_alien_point_score):
-        self.alien_points = current_alien_point_score
+        self.points_per_alien = current_alien_point_score
 
     
     def get_fleet_direction(self):
-        return self.fleet_direction
+        return self.fleet_direction_right
     
     def set_fleet_direction(self, fleet_direction):
-        self.fleet_direction = fleet_direction
+        self.fleet_direction_right = fleet_direction
     
 
     
