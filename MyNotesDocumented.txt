@@ -1,0 +1,38 @@
+Settings Architecture
+8/22/2025
+
+Settings are split into domain-specific classes:
+
+- `ScreenSettings`: Screen width, height, background color
+- `ShipSettings`: Ship lives
+- `BulletSettings`: Bullet width, height, color, bullet count
+- `AlienSettings`: Alien drop speed
+
+These are aggregated into `GameSettings`, which acts as a central config hub.
+
+```python
+screen_settings = ScreenSettings()
+ship_settings = ShipSettings()
+bullet_settings = BulletSettings()
+alien_settings = AlienSettings()
+
+alien_invasion_settings = GameSettings(screen, ship, bullet, alien)
+
+
+
+Game Functions Architecture 
+8/26/2025
+
+Started to think more like a Systems Designer by Architectually planning how different parts of a software system interact such as:
+
+- Modularity: Breaking down a system into clean, reusable parts
+- Data flow: How information moves between components (e.g. bullets from input to collision to rendering)
+- Responsibility: Making sure each class or module has a clear job (Single Responsibility Principle)
+- State management: Avoiding bugs by controlling how and where data is stored and changed
+- Scalability: Designing systems that can grow without falling apart
+
+
+Probably going to use 3 design patterns: observer, state, or command. Feeling excited. After refactoring this last game_functions.py file, will run tests and then I am free to add new features.
+
+NOTE:
+This crash and discovery happened trying to fire a bullet after successfully killing one of the 36 initial aliens. 

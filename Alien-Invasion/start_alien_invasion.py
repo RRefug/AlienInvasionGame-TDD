@@ -12,8 +12,9 @@ from scoreboard import Scoreboard
 from button import Button
 from ship import Ship
 
-from bullet_manager import BulletManager
-from event_handler import EventHandler
+# from bullet_manager import BulletManager
+# from event_handler import EventHandler
+#from event_handler_version2 import EventHandlerAltVersion
 
 import game_functions as gf  # creating a class object when no class exists within game_functions file.
 
@@ -61,33 +62,39 @@ def run_game():
     # TODO: Add a BulletManager instance to update bullets
     #print(f'This is the alien group: {aliens}')
     #print(f'This is the bullet group: {bullets}')
-    bullet_manager = BulletManager(alien_invasion_settings, screen, stats, score_board, ship, aliens, bullets)
+    #bullet_manager = BulletManager(alien_invasion_settings, screen, stats, score_board, ship, aliens, bullets)
     #print(f'Bullet manager now has this many aliens: {aliens.sprites()}')
     #print(f'Bullet manager now has this many bullets: {bullets.sprites()}')
     
-    button_events = EventHandler(alien_invasion_settings, screen, ship, bullets)
+    #button_events = EventHandler(alien_invasion_settings, screen, ship, bullets)
+    #button_eventsV2 = EventHandlerAltVersion(alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets)
 
     count = 1
     # Start the main loop for the game.
     while True:
         print(count)
-        ######## gf.check_events(
+        ###Original code#### 
+        gf.check_events(
+            alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets
+        )
+
+        ###First event handler version ### button_events.check_events(
         #     alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets
         # )
-        button_events.check_events(
-             alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets
-         )
+
+        #button_eventsV2.check_events()
 
         if stats.game_active:
-            #print('UPDATING SHIP...')
+            
             ship.update()
-            #print('UPDATING BULLETS...')
             gf.update_bullets(alien_invasion_settings, screen, stats, score_board, ship, aliens, bullets)
-            # TODO: Figured out how to refactor. HOWEVER, we have an issue:
+            
+            # TODO: Figured out how to refactor this whole file. HOWEVER, we have an issue:
             # TODO: Bullets work fine. After one alien gets shot, we SHOULD drop to 35 aliens in group, but instead we drop to 0 in Group. 
             # TODO: After that, game crashes after one attempted bullet fire. 
-            # TODO: Could keep trying bullet manager, but see if update aliens can be refactored. Maybe there is an order.
-            ############### bullet_manager.update_bullets()
+            # TODO: Could keep trying bullet manager, but see if update aliens can be refactored. 
+            # There is an order of how this happens and we delete bullets as we try doing stuff with them.
+            #######My attempted version ######## bullet_manager.update_bullets()
             print('UPDATING ALIENS...')
             gf.update_aliens(alien_invasion_settings, screen, stats, score_board, ship, aliens, bullets)
             print(f'UPDATED ALIENS...{aliens}')
