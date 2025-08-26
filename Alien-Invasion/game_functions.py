@@ -6,50 +6,51 @@ import pygame
 from bullet import Bullet
 from alien import Alien
 
+# TODO: Don't delete commented out code until you move everything!
 
-def check_keydown_events(event, alien_invasion_settings, screen, ship, bullets):
-    """Respond to keypresses."""
-    if event.key == pygame.K_RIGHT:
-        ship.moving_right = True
-    elif event.key == pygame.K_LEFT:
-        ship.moving_left = True
-    elif event.key == pygame.K_SPACE:
-        fire_bullet(alien_invasion_settings, screen, ship, bullets)
-    elif event.key == pygame.K_q:
-        sys.exit()
-
-
-def check_keyup_events(event, ship):
-    """Respond to key releases."""
-    if event.key == pygame.K_RIGHT:
-        ship.moving_right = False
-    elif event.key == pygame.K_LEFT:
-        ship.moving_left = False
+# def check_keydown_events(event, alien_invasion_settings, screen, ship, bullets):
+#     """Respond to keypresses."""
+#     if event.key == pygame.K_RIGHT:
+#         ship.moving_right = True
+#     elif event.key == pygame.K_LEFT:
+#         ship.moving_left = True
+#     elif event.key == pygame.K_SPACE:
+#         fire_bullet(alien_invasion_settings, screen, ship, bullets)
+#     elif event.key == pygame.K_q:
+#         sys.exit()
 
 
-def check_events(alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets):
-    """Respond to keypresses and mouse events."""
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            sys.exit()
-        elif event.type == pygame.KEYDOWN:
-            check_keydown_events(event, alien_invasion_settings, screen, ship, bullets)
-        elif event.type == pygame.KEYUP:
-            check_keyup_events(event, ship)
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            mouse_x, mouse_y = pygame.mouse.get_pos()
-            check_play_button(
-                alien_invasion_settings,
-                screen,
-                stats,
-                score_board,
-                play_button,
-                ship,
-                aliens,
-                bullets,
-                mouse_x,
-                mouse_y,
-            )
+# def check_keyup_events(event, ship):
+#     """Respond to key releases."""
+#     if event.key == pygame.K_RIGHT:
+#         ship.moving_right = False
+#     elif event.key == pygame.K_LEFT:
+#         ship.moving_left = False
+
+
+# def check_events(alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets):
+#     """Respond to keypresses and mouse events."""
+#     for event in pygame.event.get():
+#         if event.type == pygame.QUIT:
+#             sys.exit()
+#         elif event.type == pygame.KEYDOWN:
+#             check_keydown_events(event, alien_invasion_settings, screen, ship, bullets)
+#         elif event.type == pygame.KEYUP:
+#             check_keyup_events(event, ship)
+#         elif event.type == pygame.MOUSEBUTTONDOWN:
+#             mouse_x, mouse_y = pygame.mouse.get_pos()
+#             check_play_button(
+#                 alien_invasion_settings,
+#                 screen,
+#                 stats,
+#                 score_board,
+#                 play_button,
+#                 ship,
+#                 aliens,
+#                 bullets,
+#                 mouse_x,
+#                 mouse_y,
+#             )
 
 
 def check_play_button(

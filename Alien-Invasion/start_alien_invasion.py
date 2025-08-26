@@ -13,6 +13,7 @@ from button import Button
 from ship import Ship
 
 from bullet_manager import BulletManager
+from event_handler import EventHandler
 
 import game_functions as gf  # creating a class object when no class exists within game_functions file.
 
@@ -64,13 +65,18 @@ def run_game():
     #print(f'Bullet manager now has this many aliens: {aliens.sprites()}')
     #print(f'Bullet manager now has this many bullets: {bullets.sprites()}')
     
+    button_events = EventHandler(alien_invasion_settings, screen, ship, bullets)
+
     count = 1
     # Start the main loop for the game.
     while True:
         print(count)
-        gf.check_events(
-            alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets
-        )
+        ######## gf.check_events(
+        #     alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets
+        # )
+        button_events.check_events(
+             alien_invasion_settings, screen, stats, score_board, play_button, ship, aliens, bullets
+         )
 
         if stats.game_active:
             #print('UPDATING SHIP...')
@@ -81,7 +87,7 @@ def run_game():
             # TODO: Bullets work fine. After one alien gets shot, we SHOULD drop to 35 aliens in group, but instead we drop to 0 in Group. 
             # TODO: After that, game crashes after one attempted bullet fire. 
             # TODO: Could keep trying bullet manager, but see if update aliens can be refactored. Maybe there is an order.
-            #bullet_manager.update_bullets()
+            ############### bullet_manager.update_bullets()
             print('UPDATING ALIENS...')
             gf.update_aliens(alien_invasion_settings, screen, stats, score_board, ship, aliens, bullets)
             print(f'UPDATED ALIENS...{aliens}')
