@@ -20,7 +20,7 @@ alien_invasion_settings = GameSettings(screen, ship, bullet, alien)
 
 
 
-Game Functions Architecture 
+Game Functions Architecture and Mutation Safety Exploration
 8/26/2025
 
 Started to think more like a Systems Designer by Architectually planning how different parts of a software system interact such as:
